@@ -1,0 +1,76 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.prompt-form {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  --elevation: 14px;
+  --overlay: 0.08;
+}
+
+/*
+ * ─── MOBILE SCREENS ─────────────────────────────────────────────────────────────
+ */
+
+@media only screen and (max-width: 650px) {
+  .prompt-form {
+    position: absolute;
+    width: 70vw;
+    height: 50%;
+    top: 50%;
+    left: 15vw;
+    transform: translate(0, -50%);
+    --elevation: 14px;
+    --overlay: 0.08;
+  }
+}
+
+/*
+ * ─── CALCULATOR FORM ────────────────────────────────────────────────────────────
+ */
+
+  
+ .calculator-form {
+   position: absolute;
+  --elevation: 7px;
+  --overlay: .1;
+  width: 74%;
+  height: 74%;
+  top: 13%;
+  left: 13%;
+ }
+
+ .calculator-form label,
+ .calculator-form input[type=text] {
+  padding: 2%;
+  margin: 3%;
+   display: inline-block;
+ }
+ 
+ .calculator-form input[type=text] {
+   display: inline;
+ }
+
+ .calculator-form h3 {
+   text-align: center;
+ }
+
+ .result-field {
+   width: 100% !important;
+   text-align: center !important;
+   filter: hue-rotate(40deg) !important;
+   padding: 8px !important;
+
+   
+
+   --elevation: 8px;
+   --overlay: .14;
+
+  }
